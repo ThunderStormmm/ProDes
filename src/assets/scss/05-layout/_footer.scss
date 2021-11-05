@@ -1,0 +1,92 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+.footer{
+	position: relative;
+	background:#000;
+	min-height: 630px; 	
+	text-align:left;
+	width:100%;
+	min-width: $min-width;
+	order: 3;	
+    -webkit-order: 3;
+
+	&__info{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 460px;
+		height: 270px;
+		background-color: #5F9EA0;
+		padding: 50px 68px 60px;
+	}
+	&__addr{
+		margin-bottom: 36px;
+		color: #fff;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 500;
+		text-align: center;
+	}
+	&__phone{
+		display: block;
+		color: #fff;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 700;
+		margin-bottom: 38px;
+		text-align: center;
+	}
+	&__social{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #fff;
+		border-radius: 100%;
+		margin: 0 15px;
+			img{
+				height: 27px;
+			}
+		}
+	}
+	&__maps{
+		width:100%; 
+		height:630px; 
+		border:0;   
+		z-index:4;
+	}
+		
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}

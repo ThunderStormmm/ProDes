@@ -1,0 +1,95 @@
+.burger-menu{
+
+    &__btn{
+        display: none;
+        align-items: center;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 4;
+        @media screen and (max-width: 767px) {
+          display: flex;
+        }
+    }
+
+    &__btn > span,
+    &__btn > span::before,
+    &__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #5F9EA0;
+    }
+    &__btn > span::before {
+    content: '';
+    top: -8px;
+    }
+    &__btn > span::after {
+    content: '';
+    top: 8px;
+    }
+
+    &__box {
+        display: block;
+        position: fixed ;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 400px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: rgba(160, 160, 160, 0.95);
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 2;
+
+        @media screen and (max-width: 767px) {
+          width: 55%;
+        }
+      }
+
+      &__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      &__item:hover {
+        background-color: #CFD8DC;
+      }
+}
+    #burger-menu__toggle:checked ~ .burger-menu__btn > span {
+        transform: rotate(45deg);
+      }
+    #burger-menu__toggle:checked ~ .burger-menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+    #burger-menu__toggle:checked ~ .burger-menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    #burger-menu__toggle:checked ~ .burger-menu__box {
+        visibility: visible;
+        left: 0;
+      }
+
+    .burger-menu__btn > span,
+    .burger-menu__btn > span::before,
+    .burger-menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .burger-menu__box {
+        transition-duration: .25s;
+    }
+    .burger-menu__item {
+        transition-duration: .25s;
+    }

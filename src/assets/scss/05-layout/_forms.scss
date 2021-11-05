@@ -1,0 +1,22 @@
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center; 
+        margin: 0 auto; 
+    }
+
+    &__input{
+        height: 50px;
+        border-radius: 5px;
+        background: #f0f0f0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    
+}
