@@ -7,6 +7,11 @@
         justify-content: center;
         margin-bottom: 60px;
         padding-left: 0;
+        
+        @media screen and (max-width: 767px) {
+            display: block;
+            left: 50%;
+        }
     }
     
     &__item{
@@ -22,6 +27,13 @@
         transform: skewX(-25deg);
         margin: 0 5px;
         cursor: pointer;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10px;
+            width: 100%;
+            transform: skewX(0);
+
+        }
         
         &:hover{
             transition: 1.0s all;
@@ -32,6 +44,7 @@
             
             @media screen and (max-width: 767px) {
                 font-size: 13px; 
+                transform: skewX(0);
               }
         }
 

@@ -41,12 +41,12 @@ if (isset($_POST['date']) && $_POST['date'] !== '') {
 }
 if (isset($_POST['time']) && $_POST['time'] !== '') {
     $time = $_POST['time'];
-    $message .= '<p>Время: '.$time.'</p>';
+    $message .= '<p>Час: '.$time.'</p>';
 }
 $message .= '</body></html>';
 
 if (!$json){
-    $to = 'gaida777777@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+    $to = 'Kuzya777777kuzya@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
     $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
     $headers .= "From: masterpava.kz \r\n"; //Наименование и почта отправителя
     $status = mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
