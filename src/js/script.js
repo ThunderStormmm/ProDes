@@ -114,20 +114,20 @@ $(document).ready(function(){
       valideForms("#consultation form");
       valideForms("#order form");
 
-      // $('form').submit(function(e) {
-      //   e.preventDefault();
-      //   $.ajax({
-      //     type:"POST",
-      //     url:"../mailer/smart.php",
-      //     data: $(this).serialize()
-      //   }).done(function(){
+      $('form').submit(function(e) {
+         e.preventDefault();
+         $.ajax({
+           type:"POST",
+           url:"../send.php",
+           data: $(this).serialize()
+         }).done(function(){
           
-      //     $(this).find("inpute").val("");
+           $(this).find("inpute").val("");
 
-      //     $('form').trigger('reset');
-      //   });
-      //   return false;
-      // });
+           $('form').trigger('reset');
+         });
+         return false;
+       });
 
 
       $(window).scroll(function() {
