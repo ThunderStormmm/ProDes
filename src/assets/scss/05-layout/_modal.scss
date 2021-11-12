@@ -24,8 +24,9 @@
     z-index: 4;
     &__close{
         position: absolute;
-        top: 0;
-        right: -40px;
+        top: 10px;
+        right: 10px;
+        // right: -40px;
         font-size: 41px;
         color: #c70101;
         line-height: 21px;

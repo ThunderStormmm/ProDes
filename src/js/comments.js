@@ -20,7 +20,7 @@ window.addEventListener('load', Question.renderList);
 function submitFormHandler(event, input, submitBtn) {
     event.preventDefault();
     if (isValid(input.value)) {
-        const randomInt = Math.round(Math.random() * 10);
+        const randomInt = Math.round(Math.random() * 7);
         let ava;
         if (randomInt <= AVA_QUANTITY) {
             ava = randomInt;

@@ -1,0 +1,16 @@
+.empty-place{
+    display: flex;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+
+    &__header{
+        color: #aaa;
+        text-transform: uppercase;
+        // p{
+        //     text-transform: uppercase;
+        //     padding: 5px;
+        //     font-size: 3rem;
+        // }
+    }
+}

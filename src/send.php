@@ -1,7 +1,7 @@
 <?
 
 $name = '';
-$phone = '';
+$number = '';
 $email = '';
 $json = array();
 
@@ -19,11 +19,11 @@ if (isset($_POST['name']) && $_POST['name'] !== '') {
     $json['error']['name'] = "Будь ласка, введіть своє ім'я";
 }
 
-if (isset($_POST['phone']) && $_POST['phone'] !== '') {
-    $phone = $_POST['phone'];
-    $message .= '<p>Телефон: '.$phone.'</p>';
+if (isset($_POST['number']) && $_POST['number'] !== '') {
+    $number = $_POST['number'];
+    $message .= '<p>Телефон: '.$number.'</p>';
 } else {
-    $json['error']['phone'] = 'Будь ласка, введіть свій телефон';
+    $json['error']['number'] = 'Будь ласка, введіть свій телефон';
 }
 
 if (isset($_POST['email']) && $_POST['email'] !== '') {
