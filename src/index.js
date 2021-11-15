@@ -12,6 +12,7 @@ import './js/utils';
 import './js/question';
 import './js/modal';
 import './js/authorization';
+import './js/forms';
 import 'jquery-validation';// import './js/components/slick.js';
 // import './assets/css/main.css';
 // import './assets/scss/main.scss';
